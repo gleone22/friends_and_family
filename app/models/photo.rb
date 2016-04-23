@@ -1,6 +1,5 @@
 class Photo < ActiveRecord::Base
-  has_many :comments :likes
-
-  @photos = Photo.all
+  has_many :comments
+  has_many :likes
 
 end
