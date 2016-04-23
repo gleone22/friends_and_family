@@ -1,5 +1,4 @@
 require 'httparty'
-require 'pp'
 require 'nokogiri'
 
 class HomeController < ApplicationController
@@ -7,8 +6,6 @@ class HomeController < ApplicationController
   end
 
   def map
-
-
 
 lat = "42.313479"
 long = "-71.1273687"
@@ -26,5 +23,5 @@ response = HTTParty.get(full_url).parsed_response
     puts "Each ID=> #{i["id"]} --Each owner=> #{i["owner"]} --Each secret=> #{i["secret"]}-- each server=> #{i["server"]}-- farm=> #{i["farm"]}"
 
   end
-  end
+
 end
