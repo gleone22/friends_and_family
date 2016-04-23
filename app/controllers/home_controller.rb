@@ -5,7 +5,7 @@ class HomeController < ApplicationController
   def index
   end
 
-  def map
+  def call_photos
 
 lat = "42.313479"
 long = "-71.1273687"
